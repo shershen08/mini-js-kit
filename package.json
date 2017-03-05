@@ -1,0 +1,24 @@
+{
+  "name": "min-build-setup",
+  "version": "1.0.0",
+  "description": "minimalistic frontend build setup",
+  "main": "index.js",
+  "scripts": {
+    "validate": "npm ls",
+     "test": "ava",
+    "lint": "standard",
+    "dev": "chokidar '**/*.js' -c 'standard && ava'"
+  },
+  "author": "Mikhail Kuznetcov",
+  "license": "MIT",
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "chokidar-cli": "^1.2.0",
+    "precommit-hook": "^3.0.0",
+    "standard": "^9.0.0"
+  }
+}

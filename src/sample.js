@@ -1,0 +1,1 @@
+export default awesomeModule = () => 42; 
